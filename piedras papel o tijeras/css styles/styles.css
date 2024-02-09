@@ -1,0 +1,53 @@
+body{
+    background-color: #006B93;
+    color: #D0D4E3;
+}
+
+header{
+    background-color: #D0D4E3 ;
+    color: #006B93;
+}
+
+.elige-tu-arma{
+    margin-bottom: 2rem;
+}
+
+.elige-tu-arma h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.armas{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma{
+    font-family: inherit;
+    font-size: 20px;
+    background: #212121;
+    color: white;
+    fill: rgb(155, 153, 153);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.btn{
+    background-color:  #D0D4E3;
+    border-radius: .5rem;
+    color:  #006B93;
+    padding: .6rem;
+}
+
+.arma:hover{
+    transition: all 1s;
+    scale: 1.2;
+}

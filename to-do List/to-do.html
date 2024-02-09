@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>To-Do-list</title>
+</head>
+    <body class="font-sans capitalize flex justify-center ">
+        <div class=" bg-[url('./fondo.jpg')] bg-cover w-screen h-screen flex justify-center">
+        <div class="rounded-md m-6 p-6 w-full max-w-sm z-10" id="caja-de-tareas">
+            <div class="flex place-content-between items-center">
+                <div class="flex items-center">
+                    <div class="text-5xl" id="diaNumero"></div>
+                    <div>
+                        <div class="font-bold ml-1.5 text-xl" id="mesNombre"></div>
+                        <div class=" ml-1.5 text-xl" id="añoNumero"></div>
+                    </div>
+                </div>
+                <div class="tracking-widest uppercase font-bold text-xl" id="dateText"></div>
+            </div>
+            <form onsubmit="addNewTask(event)" >
+                <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="border-none pl-2.5 rounded-lg">
+                <button type="submit" class="border-none font-bold cursor-pointer h-[35px] rounded-[50%] text-[18px] bg-red-200">+</button>
+                <button type="button" class="border-none font-bold cursor-pointer bg-red-500 text-slate-200 rounded-lg font-sans" onclick="ordenarTareas()">Ordenar</button>
+            </form>
+            <div id="tareas-caja"></div>
+        </div>
+        </div>
+</body>
+<script src="./funcion-todo.js"></script>
+</html>
